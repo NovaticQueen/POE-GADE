@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
@@ -9,10 +10,13 @@ public class Menu : MonoBehaviour
     public Canvas LoadCanvas;
     public Canvas MapCanvas;
 
+    public GameObject mapManager;
+
     private void Awake() //This method starts before the start method
     {
         LoadCanvas.enabled = false;
         MapCanvas.enabled = false;
+        mapManager = GameObject.FindGameObjectWithTag("MapManager");
     }
 
     public void LoadMenuOn() //Loading menu button
@@ -33,5 +37,14 @@ public class Menu : MonoBehaviour
     {
         MapCanvas.enabled = true;
         MainCanvas.enabled = false;
+    }
+
+    public void Create()
+    {
+        MapManager.isInMenu = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        DontDestroyOnLoad(mapManager);
+
     }
 }
