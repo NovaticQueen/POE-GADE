@@ -9,10 +9,9 @@ public class PrefabSpawner : MonoBehaviour
     public GameObject wizard;
 
     MapManager mapManager;
-    List<GameObject> unitList;
+    List<GameObject> unitList;  
 
-
-    public int unitAmount;
+    public int unitAmount;   
 
     void Start()
     {
@@ -45,9 +44,9 @@ public class PrefabSpawner : MonoBehaviour
             }
 
             unitList.Add(u);
-        }                
-            
-        
+        }                               
     }
+
+   
     
 }
