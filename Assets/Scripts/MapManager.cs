@@ -8,13 +8,17 @@ public class MapManager : MonoBehaviour
     public Slider widthSlider;
     public Slider lengthSlider;
 
+    public int mapWidth;
+    public int mapLength;
+
     public static int width;
     public static int length;
-    public static bool isInMenu = true;
+    public static bool isInMenu = true;    
 
     // Start is called before the first frame update
     void Start()
     {
+
         
     }
 
@@ -25,6 +29,9 @@ public class MapManager : MonoBehaviour
         {
             width = (int)widthSlider.value;
             length = (int)lengthSlider.value;
+
+            mapWidth = (int)widthSlider.value;
+            mapLength = (int)lengthSlider.value;
         }
     }
 }
