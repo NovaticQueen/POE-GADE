@@ -1561,6 +1561,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   widthSlider: {fileID: 1627168594}
   lengthSlider: {fileID: 1797144058}
+  mapWidth: 0
+  mapLength: 0
 --- !u!4 &1096996428
 Transform:
   m_ObjectHideFlags: 0
@@ -2664,7 +2666,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.9647059, g: 0.9687633, b: 0.9019608, a: 0.7607843}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
