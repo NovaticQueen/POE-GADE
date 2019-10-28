@@ -232,7 +232,6 @@ GameObject:
   m_Component:
   - component: {fileID: 415384484}
   - component: {fileID: 415384486}
-  - component: {fileID: 415384485}
   m_Layer: 0
   m_Name: BuildingSpawnerB
   m_TagString: Untagged
@@ -254,21 +253,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &415384485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415384483}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8360b781f837b5644bd5ae38667006b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &415384486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +269,7 @@ MonoBehaviour:
     type: 3}
   resourceB: {fileID: 522513170778459906, guid: e2c5f5c931a56144bbfcb7d9f446dce3,
     type: 3}
-  buildingAmount: 14
+  buildingAmount: 10
 --- !u!1 &476140712
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +282,7 @@ GameObject:
   - component: {fileID: 476140713}
   m_Layer: 0
   m_Name: Blue Team
-  m_TagString: Untagged
+  m_TagString: TeamB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,7 +294,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476140712}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd6041d262577a347a2687697a84aee5, type: 3}
   m_Name: 
@@ -343,7 +327,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1153790034}
   - component: {fileID: 1153790032}
-  - component: {fileID: 1153790033}
   m_Layer: 0
   m_Name: BuildingSpawnerP
   m_TagString: Untagged
@@ -367,22 +350,7 @@ MonoBehaviour:
     type: 3}
   resourceB: {fileID: 522513170778459906, guid: 6c025d2138b9ca648b2a53d627ff850c,
     type: 3}
-  buildingAmount: 28
---- !u!114 &1153790033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153790031}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8360b781f837b5644bd5ae38667006b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
+  buildingAmount: 10
 --- !u!4 &1153790034
 Transform:
   m_ObjectHideFlags: 0
@@ -409,7 +377,7 @@ GameObject:
   - component: {fileID: 1346677949}
   m_Layer: 0
   m_Name: Pink Team
-  m_TagString: Untagged
+  m_TagString: TeamA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -421,7 +389,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346677948}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd6041d262577a347a2687697a84aee5, type: 3}
   m_Name: 
@@ -429,7 +397,7 @@ MonoBehaviour:
   ranged: {fileID: 100000, guid: 7f7bd4d48648ed64a856e2d46a44a1ca, type: 3}
   melee: {fileID: 100000, guid: 9525858720ba8304db1453bdfd346a52, type: 3}
   wizard: {fileID: 100000, guid: bad0018eb9256e6409155981dd5af9a2, type: 3}
-  unitAmount: 6
+  unitAmount: 10
 --- !u!4 &1346677950
 Transform:
   m_ObjectHideFlags: 0

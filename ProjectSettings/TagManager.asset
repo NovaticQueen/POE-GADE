@@ -8,6 +8,9 @@ TagManager:
   - Length
   - MapManager
   - Ground
+  - TeamA
+  - TeamB
+  - Wizards
   layers:
   - Default
   - TransparentFX
